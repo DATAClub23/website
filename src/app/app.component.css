@@ -1,0 +1,76 @@
+.router-container {
+  position: relative;
+}
+
+.router-container.ng-enter,
+.router-container.ng-leave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+}
+
+.router-container.ng-leave {
+  opacity: 1;
+}
+
+.router-container.ng-leave.ng-leave-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.router-container.ng-enter {
+  opacity: 0;
+}
+
+.router-container.ng-enter.ng-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+#dev p {
+  font-size: 12px;
+}
+
+footer {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  border-radius: 200px 200px 0 0;
+  background-color: rgb(249, 249, 249);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 1366px) {
+  footer {
+    width: 35.5%;
+    border-radius: 142px 142px 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #club {
+    font-size: 0.71rem;
+  }
+
+  #dev {
+    font-size: 8.5px;
+  }
+}
+
+@media (max-width: 510px) {
+  footer {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #club {
+    font-size: 0.5rem;
+  }
+
+  #dev {
+    font-size: 6.5px;
+  }
+}

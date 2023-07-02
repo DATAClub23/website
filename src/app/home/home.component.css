@@ -1,0 +1,132 @@
+.slider{
+    width: 951px;
+    height: 540px;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.slides{
+    width: 100%;
+    height: 540px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    transition: 2s;
+}
+.slide img{
+    width: 951px;
+    height: 540px;
+}
+
+.manual-switch{
+    position: absolute;
+    width: 951px;
+    display: flex;
+    margin-top: 500px;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid #cfc0e8;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #cfc0e8;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+#radio4:checked ~ .first{
+    margin-left: -300%;
+}
+#radio5:checked ~ .first{
+    margin-left: -400%;
+}
+#radio6:checked ~ .first{
+    margin-left: -500%;
+}
+@media (max-width: 1366px) {
+    .slider{
+        width: 676.5px;
+        height: 384px;
+    }
+    
+    .slides{
+        width: 100%;
+        height: 384px;
+    }
+
+    .slide img{
+        width: 676.5px;
+        height: 384px;
+    }
+    
+    .manual-switch{
+        width: 676.5px;
+    }
+    
+    .manual-btn:not(:last-child){
+        margin-right: 28.5px;
+    }
+    .manual-switch{
+        width: 676.5px;
+        margin-top: 355px;  
+    }
+}
+@media (max-width: 720px) {
+    .slider{
+        width: 360px;
+        height: 220px;
+        margin-bottom: 50%;
+        margin-top: 20%;
+    }
+    
+    .slides{
+        width: 100%;
+        height: 220px;
+    }
+
+    .slide img{
+        width: 360px;
+        height: 220px;
+    }
+    
+    .manual-switch{
+        width: 360px;
+    }
+    
+    .manual-btn:not(:last-child){
+        margin-right: 28.5px;
+    }
+    .manual-switch{
+        width: 360px;
+        margin-top: 200px;  
+    }
+}
